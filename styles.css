@@ -1,171 +1,109 @@
-/* General Styles */
+/* Basic styles for smooth transitions */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
+/* Add page transition effects */
+* {
+    box-sizing: border-box;
 }
 
-/* Header Section */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
-nav ul {
-    list-style: none;
+header nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
+header nav ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Section Styles */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Smooth transition for page content */
 .section {
-    padding: 2rem 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 1rem;
+body.loaded .section {
+    opacity: 1;
 }
 
-/* Projects Section */
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* Apply some transitions to form elements */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    position: relative;
-    margin: 1rem;
-    padding: 0;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-.project img, .project video {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s;
+form button:hover {
+    background-color: #45a049;
 }
 
-.project:hover img, .project:hover video {
-    transform: scale(1.05);
+/* Social links */
+.social-links {
+    margin-top: 20px;
 }
 
-.project-title {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    width: 100%;
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-/* Project Details Page */
-.project-details {
-    padding: 2rem;
-    background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 800px;
-}
-
-.project-details h2 {
-    margin-top: 0;
-}
-
-.project-details video {
-    width: 100%;
-    margin: 1rem 0;
-}
-
-.project-details img {
-    max-width: 100%;
-    height: auto;
-    margin: 1rem 0;
-}
-
-.project-details p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 1rem 0;
-}
-
-/* Skills Section */
-.skills-list {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.skills-list li {
-    display: inline-block;
-    margin: 0.5rem;
-    background: #fff;
-    padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-section#contact p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-}
-
-section#contact a {
-    color: #007BFF;
+.social-links a {
+    margin-right: 15px;
     text-decoration: none;
+    color: #222;
+    font-weight: bold;
 }
 
-section#contact a:hover {
-    text-decoration: underline;
+.social-links a:hover {
+    color: #4CAF50;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+/* Container for all content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }

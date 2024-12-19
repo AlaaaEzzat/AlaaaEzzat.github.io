@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Projects - Portfolio</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,23 +20,39 @@
         </nav>
     </header>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <a href="project1.html" class="project">
-                <img src="assets/project1-thumbnail.jpg" alt="Project 1">
-                <div class="project-title">Project 1</div>
-            </a>
-            <a href="project2.html" class="project">
-                <img src="assets/project2-thumbnail.jpg" alt="Project 2">
-                <div class="project-title">Project 2</div>
-            </a>
-            <!-- Add more projects -->
+    <section class="section projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Example Project 1 -->
+                <div class="project">
+                    <img src="project1-thumbnail.jpg" alt="Project 1">
+                    <div class="project-title">Time Travel Adventure</div>
+                    <p>A narrative-driven game involving time travel mechanics in a dynamic world. Developed in Unity with advanced physics and shaders.</p>
+                    <a href="project1.html" class="btn">View Project</a>
+                </div>
+
+                <!-- Example Project 2 -->
+                <div class="project">
+                    <img src="project2-thumbnail.jpg" alt="Project 2">
+                    <div class="project-title">Space Survival</div>
+                    <p>An action-packed space survival game featuring AI enemies, procedural level generation, and multiplayer modes.</p>
+                    <a href="project2.html" class="btn">View Project</a>
+                </div>
+
+                <!-- Example Project 3 -->
+                <div class="project">
+                    <img src="project3-thumbnail.jpg" alt="Project 3">
+                    <div class="project-title">Fantasy RPG</div>
+                    <p>A fantasy RPG with immersive world-building, a combat system, and dialogue choices that affect the game’s narrative.</p>
+                    <a href="project3.html" class="btn">View Project</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 John Doe | All Rights Reserved</p>
     </footer>
 </body>
 </html>
