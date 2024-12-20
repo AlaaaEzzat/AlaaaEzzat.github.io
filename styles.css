@@ -1,19 +1,18 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #2c3e50;  /* Ensure the background is always visible */
+    color: #929292;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scroll during the transition */
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* For smoother transitions */
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #33333300;
+    color: #929292;
+    padding: 30px 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -22,8 +21,8 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 1.8em;
+    margin: 1;
+    font-size: 2.8em;
 }
 
 /* Navigation */
@@ -36,11 +35,11 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 35px;
 }
 
 nav ul li a {
-    color: white;
+    color: #929292;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -58,14 +57,16 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     padding: 40px;
-    transition: opacity 1s ease-out, transform 0.5s ease-in-out;
+    opacity: 0; /* Start with sections hidden */
+    transform: translateX(100%); /* Start off-screen */
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
     overflow: hidden;
 }
 
-#home { background-color: #34495e; }
-#about { background-color: #2c3e50; }
-#projects { background-color: #16a085; }
-#contact { background-color: #e74c3c; }
+#home { background-color: #2c3e50; }
+#contact { background-color: #2c3e50; }
+#projects { background-color: #2c3e50; }
+#skills { background-color: #2c3e50; }
 
 h1, h2, h3 {
     margin: 20px 0;
@@ -155,8 +156,7 @@ footer {
 
 /* Transition Classes */
 body.transition-fade {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 1; /* Keep the body visible */
 }
 
 /* For sliding left */
@@ -187,6 +187,6 @@ body.loaded {
 /* Add fade-in effect when content is loaded */
 body.loaded .section {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0); /* Move back to original position */
     transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
 }
