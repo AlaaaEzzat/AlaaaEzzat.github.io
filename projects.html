@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -12,41 +13,36 @@
         <h1>My Projects</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="section projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <!-- Example Project 1 -->
-                <div class="project">
-                    <img src="project1-thumbnail.jpg" alt="Project 1">
-                    <div class="project-title">Time Travel Adventure</div>
-                    <p>A narrative-driven game involving time travel mechanics in a dynamic world. Developed in Unity with advanced physics and shaders.</p>
-                    <a href="project1.html" class="btn">View Project</a>
-                </div>
+    <section class="section">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="project1-thumbnail.jpg" alt="Project 1">
+                <div class="project-title">Time Travel Adventure</div>
+                <p>A narrative-driven game involving time travel mechanics in a dynamic world. Developed in Unity with advanced physics and shaders.</p>
+                <a href="project1.html" class="btn">View Project</a>
+            </div>
 
-                <!-- Example Project 2 -->
-                <div class="project">
-                    <img src="project2-thumbnail.jpg" alt="Project 2">
-                    <div class="project-title">Space Survival</div>
-                    <p>An action-packed space survival game featuring AI enemies, procedural level generation, and multiplayer modes.</p>
-                    <a href="project2.html" class="btn">View Project</a>
-                </div>
+            <div class="project">
+                <img src="project2-thumbnail.jpg" alt="Project 2">
+                <div class="project-title">Space Survival</div>
+                <p>An action-packed space survival game featuring AI enemies, procedural level generation, and multiplayer modes.</p>
+                <a href="project2.html" class="btn">View Project</a>
+            </div>
 
-                <!-- Example Project 3 -->
-                <div class="project">
-                    <img src="project3-thumbnail.jpg" alt="Project 3">
-                    <div class="project-title">Fantasy RPG</div>
-                    <p>A fantasy RPG with immersive world-building, a combat system, and dialogue choices that affect the game’s narrative.</p>
-                    <a href="project3.html" class="btn">View Project</a>
-                </div>
+            <div class="project">
+                <img src="project3-thumbnail.jpg" alt="Project 3">
+                <div class="project-title">Fantasy RPG</div>
+                <p>A fantasy RPG with immersive world-building, a combat system, and dialogue choices that affect the game’s narrative.</p>
+                <a href="project3.html" class="btn">View Project</a>
             </div>
         </div>
     </section>

@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="loaded">
     <header>
-        <h1>John Doe's Portfolio</h1>
-        <p>Game Developer | Unity Expert | Programmer | Designer</p>
+        <h1>My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-transition="fade">Home</a></li>
+                <li><a href="projects.html" class="nav-link" data-transition="slideLeft">Projects</a></li>
+                <li><a href="skills.html" class="nav-link" data-transition="slideRight">Skills</a></li>
+                <li><a href="contact.html" class="nav-link" data-transition="fade">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="section intro">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hello! I'm John Doe, a passionate game developer with a deep love for creating engaging, interactive experiences. I specialize in Unity development and am always looking for new challenges to solve through game design, programming, and creativity.</p>
-            <a href="projects.html" class="btn">Explore My Projects</a>
-        </div>
+    <section id="home" class="section active">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is the home page with links to my projects, skills, and contact info.</p>
     </section>
 
     <footer>
